@@ -25,8 +25,8 @@ and `NavigationLink`.
 
 ## Opening the Project
 
-Open `MarksApp.xcodeproj` in Xcode, choose an iPhone Simulator from the
-toolbar and press **Command + R**.
+Open `MarksApp/MarksApp.xcodeproj` in Xcode, choose an iPhone Simulator
+from the toolbar and press **Command + R**.
 
 The project targets iOS 17.0 and Swift 5. If your Xcode is older than 15,
 set the deployment target to a version it supports under
@@ -109,15 +109,14 @@ the grade is displayed on the detail screen.
 SE4041-Practical-04/
 ├── README.md
 ├── .gitignore
-├── MarksApp.xcodeproj/
-│   ├── project.pbxproj
-│   └── xcshareddata/xcschemes/MarksApp.xcscheme
 ├── MarksApp/
-│   ├── MarksAppApp.swift
-│   ├── ContentView.swift
-│   ├── Student.swift
-│   ├── StudentDetailView.swift
-│   └── Assets.xcassets/
+│   ├── MarksApp.xcodeproj/
+│   └── MarksApp/
+│       ├── MarksAppApp.swift
+│       ├── ContentView.swift
+│       ├── Student.swift
+│       ├── StudentDetailView.swift
+│       └── Assets.xcassets/
 └── screenshots/
     ├── 01-Student-List.png
     └── 02-Student-Details.png
