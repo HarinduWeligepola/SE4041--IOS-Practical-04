@@ -23,11 +23,18 @@ modifiers, managing changing values with `@State`, accepting input with
 model `Identifiable`, and moving between screens with `NavigationStack`
 and `NavigationLink`.
 
-## Creating the Xcode Project
+## Opening the Project
 
-1. Open Xcode and choose **File > New > Project**.
-2. Select **iOS > App**.
-3. Use these settings:
+Open `MarksApp.xcodeproj` in Xcode, choose an iPhone Simulator from the
+toolbar and press **Command + R**.
+
+The project targets iOS 17.0 and Swift 5. If your Xcode is older than 15,
+set the deployment target to a version it supports under
+**Project > MarksApp > General**.
+
+## Original Project Settings
+
+The project was created with **iOS > App** using:
 
 ```
 Product Name: MarksApp
@@ -36,16 +43,8 @@ Language:     Swift
 Storage:      None
 ```
 
-4. For the Organization Identifier, use `lk.ac.sliit`.
-5. Save the project inside this repository folder.
-6. Replace the contents of the generated `ContentView.swift` with the
-   version in `MarksApp-Swift-Files/`, and add `Student.swift` and
-   `StudentDetailView.swift` to the same target
-   (**File > Add Files to "MarksApp"**).
-7. The generated app entry point file is named `MarksAppApp.swift`. Keep
-   the generated one, or replace it with the copy provided. There must
-   only ever be one `@main` entry point in the target.
-8. Select an iPhone Simulator and press **Command + R** to run.
+Organization Identifier `lk.ac.sliit`, giving the bundle identifier
+`lk.ac.sliit.MarksApp`.
 
 ## Source Files
 
@@ -110,22 +109,19 @@ the grade is displayed on the detail screen.
 SE4041-Practical-04/
 ├── README.md
 ├── .gitignore
-├── MarksApp-Swift-Files/        (source files to add to the Xcode project)
-├── MarksApp/                    (created by Xcode)
-│   ├── MarksApp.xcodeproj/
-│   └── MarksApp/
-│       ├── MarksAppApp.swift
-│       ├── ContentView.swift
-│       ├── Student.swift
-│       ├── StudentDetailView.swift
-│       └── Assets.xcassets/
+├── MarksApp.xcodeproj/
+│   ├── project.pbxproj
+│   └── xcshareddata/xcschemes/MarksApp.xcscheme
+├── MarksApp/
+│   ├── MarksAppApp.swift
+│   ├── ContentView.swift
+│   ├── Student.swift
+│   ├── StudentDetailView.swift
+│   └── Assets.xcassets/
 └── screenshots/
     ├── 01-Student-List.png
     └── 02-Student-Details.png
 ```
-
-Once the files have been added to the Xcode project, the
-`MarksApp-Swift-Files/` folder can be deleted.
 
 ## My Practical Evidence
 
